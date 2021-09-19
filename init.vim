@@ -45,6 +45,7 @@ source $XDG_CONFIG_HOME/nvim/_machine_specific.vim
 "set clipboard=unnamedplus
 let &t_ut=''
 set autochdir
+set encoding=UTF-8
 
 " ===
 " === Editor behavior
