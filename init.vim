@@ -129,11 +129,11 @@ noremap <LEADER>rc :e $HOME/.config/nvim/init.vim<CR>
 noremap <LEADER>rv :e .nvimrc<CR>
 
 " Undo operations
-noremap l u
+" noremap l u
 
 " Insert Key
-noremap k i
-noremap K I
+" noremap k i
+" noremap K I
 
 " make Y to copy till the end of the line
 nnoremap Y y$
@@ -173,13 +173,13 @@ noremap <silent> <LEADER>o za
 " < n   i >
 "     e
 "     v
-noremap <silent> u k
-noremap <silent> n h
-noremap <silent> e j
-noremap <silent> i l
-noremap <silent> gu gk
-noremap <silent> ge gj
-noremap <silent> \v v$h
+" noremap <silent> u k
+" noremap <silent> n h
+" noremap <silent> e j
+" noremap <silent> i l
+" noremap <silent> gu gk
+" noremap <silent> ge gj
+" noremap <silent> \v v$h
 
 " U/E keys for 5 times u/e (faster navigation)
 noremap <silent> U 5k
@@ -195,7 +195,7 @@ noremap W 5w
 noremap B 5b
 
 " set h (same as n, cursor left) to 'end of word'
-noremap h e
+" noremap h e
 
 " Ctrl + U or E will move up/down the view port without moving the cursor
 noremap <C-U> 5<C-y>
@@ -1349,7 +1349,7 @@ let g:move_key_modifier = 'C'
 " ===
 " === any-jump
 " ===
-nnoremap j :AnyJump<CR>
+nnoremap J :AnyJump<CR>
 let g:any_jump_window_width_ratio  = 0.8
 let g:any_jump_window_height_ratio = 0.9
 
