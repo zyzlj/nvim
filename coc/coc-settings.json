@@ -116,7 +116,7 @@
 	"explorer.keyMappings.global": {
 		"u": "nodePrev",
 		"e": "nodeNext",
-		"h": "toggleSelection",
+		//"h": "toggleSelection",
 		"<tab>": "actionMenu",
 		"gl": "expandRecursive",
 		"gh": "collapseRecursive",
@@ -134,7 +134,6 @@
 		"pp": "pasteFile",
 		"dD": "deleteForever",
 		"a": "addFile",
-		"k": "addFile",
 		"M": "addDirectory",
 		"cw": "rename",
 		".": "toggleHidden",

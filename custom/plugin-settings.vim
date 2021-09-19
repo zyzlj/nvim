@@ -30,6 +30,8 @@ nnoremap <LEADER>g= :GitGutterNextHunk<CR>
 " ===
 " === coc.nvim
 " ===
+let g:coc_config_home = '~/.config/nvim/coc'
+let g:coc_data_home = '~/.config/coc'
 let g:coc_global_extensions = [
 	\ 'coc-css',
 	\ 'coc-diagnostic',
@@ -42,6 +44,7 @@ let g:coc_global_extensions = [
 	\ 'coc-import-cost',
 	\ 'coc-jest',
 	\ 'coc-json',
+	\ 'coc-go',
 	\ 'coc-lists',
 	\ 'coc-prettier',
 	\ 'coc-prisma',
