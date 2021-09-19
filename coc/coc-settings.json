@@ -126,7 +126,7 @@
 		"o": ["wait", "expanded?", "collapse", "expand"],
 		"O": "open:tab",
 		"n": "collapse",
-		"l": "gotoParent",
+		//"l": "gotoParent",
 		"yp": "copyFilepath",
 		"yn": "copyFilename",
 		"yy": "copyFile",
