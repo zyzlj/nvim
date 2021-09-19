@@ -1,4 +1,7 @@
 
+" ************************************
+" All Third Party Plugin Settings
+"
 " ===
 " === eleline.vim
 " ===

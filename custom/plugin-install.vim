@@ -1,7 +1,7 @@
-" ===
-" === Install Plugins with Vim-Plug
-" ===
-
+" ************************************
+" All Needed Plugins 
+" Install with Vim-Plug
+"
 call plug#begin('$HOME/.config/nvim/plugged')
 
 " Plug 'LoricAndre/fzterm.nvim'

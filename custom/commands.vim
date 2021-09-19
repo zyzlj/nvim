@@ -1,3 +1,6 @@
+" ************************************
+" Defined Commands
+"
 " Compile function
 noremap rg :call CompileRunGcc()<CR>
 func! CompileRunGcc()
