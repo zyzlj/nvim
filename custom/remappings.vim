@@ -72,8 +72,8 @@ noremap <silent> <LEADER>o za
 " noremap <silent> \v v$h
 
 " U/E keys for 5 times u/e (faster navigation)
-noremap <silent> U 5k
-noremap <silent> E 5j
+noremap <silent> U 30k
+noremap <silent> E 30j
 
 " N key: go to the start of the line
 noremap <silent> N 0
@@ -193,7 +193,7 @@ autocmd BufRead,BufNewFile *.md setlocal spell
 nnoremap \t :tabe<CR>:-tabmove<CR>:term sh -c 'st'<CR><C-\><C-N>:q<CR>
 
 " Opening a terminal window
-noremap <LEADER>\ :set splitbelow<CR>:split<CR>:res +10<CR>:term<CR>
+noremap <LEADER>cmd :set splitbelow<CR>:split<CR>:res +10<CR>:term<CR>
 
 " Press space twice to jump to the next '<++>' and edit it
 noremap <LEADER><LEADER> <Esc>/<++><CR>:nohlsearch<CR>c4l

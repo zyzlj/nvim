@@ -138,7 +138,7 @@ autocmd BufRead,BufNewFile tsconfig.json set filetype=jsonc
 
 
 " ===
-" === vim-instant-markdown
+" === coc explorer settings
 " ===
 let g:coc_explorer_global_presets = {
 \   '.vim': {
@@ -183,6 +183,36 @@ let g:coc_explorer_global_presets = {
 \     'sources': [{'name': 'buffer', 'expand': v:true}]
 \   },
 \ }
+" CoC Explorer Settings
+augroup MyCocExplorer
+  autocmd!
+  autocmd VimEnter * sil! au! FileExplorer *
+  autocmd BufEnter * let d = expand('%') | if isdirectory(d) | silent! bd | exe 'CocCommand explorer ' . d | endif
+augroup END
+" augroup MyCocExplorer
+"   autocmd!
+"   autocmd VimEnter * sil! au! F
+"   " set window status line
+"   autocmd FileType coc-explorer setl statusline=File-Explorer
+"   "quit explorer whein it's the last
+"   autocmd BufEnter * if (winnr("$") == 1 && &filetype == 'coc-explorer') | q | endif
+"   " Make sure nothing opened in coc-explorer buffer
+"   autocmd BufEnter * if bufname('#') =~# "\[coc-explorer\]-." && winnr('$') > 1 | b# | endif
+"   " open if directory specified or if buffer empty
+"   autocmd VimEnter * let d = expand('%:p')
+"     \ | if argc() == 0
+"       \ | exe 'CocCommand explorer --quit-on-open --position floating --sources buffer+,file+'
+"     \ | elseif isdirectory(d) || (bufname()=='')
+"       \ | silent! bd
+"       \ | exe 'CocCommand explorer --quit-on-open --position floating --sources buffer+,file+ ' . d
+"       \ | exe 'cd ' . d
+"     \ | else
+"       \ | cd %:p:h
+"     \ | endif
+"   " cd after open
+"   autocmd User CocExplorerOpenPost let dir = getcwd() | call CocActionAsync("runCommand", "explorer.doAction", "closest", {"name": "cd", "args": [dir]})
+" augroup END
+
 
 " ===
 " === vim-instant-markdown
@@ -203,6 +233,23 @@ noremap <LEADER>tm :TableModeToggle<CR>
 "let g:table_mode_disable_mappings = 1
 let g:table_mode_cell_text_object_i_map = 'k<Bar>'
 
+" ===
+" === Airline
+" ===
+set laststatus=2  "永远显示状态栏
+let g:airline_powerline_fonts = 1  " 支持 powerline 字体
+let g:airline#extensions#tabline#enabled = 1 " 显示窗口tab和buffer
+let g:airline_theme='molokai'  " murmur配色不错
+
+if !exists('g:airline_symbols')
+let g:airline_symbols = {}
+endif
+let g:airline_left_sep = '▶'
+let g:airline_left_alt_sep = ''
+let g:airline_right_sep = '◀'
+let g:airline_right_alt_sep = '❮'
+let g:airline_symbols.linenr = '¶'
+let g:airline_symbols.branch = '⎇'
 
 " ===
 " === FZF
