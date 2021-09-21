@@ -126,6 +126,8 @@ source $XDG_CONFIG_HOME/nvim/custom/commands.vim
 " === Install Plugins with Vim-Plug
 " ===
 source $XDG_CONFIG_HOME/nvim/custom/plugin-install.vim
+autocmd VimEnter * CocCommand explorer --no-focus
+autocmd TabNewEntered * CocCommand explorer --no-focus
 
 set re=0
 
@@ -162,6 +164,7 @@ hi NonText ctermfg=gray guifg=grey10
 " === Plugin Settings
 " ===
 source $XDG_CONFIG_HOME/nvim/custom/plugin-settings.vim
+
 
 " ===
 " === Terminal Colors

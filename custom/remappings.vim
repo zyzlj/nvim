@@ -2,11 +2,13 @@
 " Basic Mapping For Current
 "
 " Set <LEADER> as <SPACE>, ; as :
-let mapleader=" "
+let mapleader=","
 " noremap ; :
 
 " Save & quit
-noremap Q :q<CR>
+noremap Q :qa<CR>
+noremap <LEADER>qt :tabclose<CR>
+noremap <LEADER>qa :qa<CR>
 " noremap <C-q> :qa<CR>
 noremap S :w<CR>
 
@@ -18,6 +20,7 @@ noremap <LEADER>rv :e .nvimrc<CR>
 " noremap l u
 
 " Insert Key
+" Why???
 " noremap k i
 " noremap K I
 
@@ -126,10 +129,10 @@ noremap = n
 " ===
 " Use <space> + new arrow keys for moving the cursor around windows
 noremap <LEADER>w <C-w>w
-noremap <LEADER>u <C-w>k
-noremap <LEADER>e <C-w>j
-noremap <LEADER>n <C-w>h
-noremap <LEADER>i <C-w>l
+noremap <LEADER>k <C-w>k
+noremap <LEADER>j <C-w>j
+noremap <LEADER>h <C-w>h
+noremap <LEADER>l <C-w>l
 noremap qf <C-w>o
 
 " Disable the default s key
@@ -190,7 +193,7 @@ autocmd BufRead,BufNewFile *.md setlocal spell
 nnoremap \t :tabe<CR>:-tabmove<CR>:term sh -c 'st'<CR><C-\><C-N>:q<CR>
 
 " Opening a terminal window
-noremap <LEADER>/ :set splitbelow<CR>:split<CR>:res +10<CR>:term<CR>
+noremap <LEADER>\ :set splitbelow<CR>:split<CR>:res +10<CR>:term<CR>
 
 " Press space twice to jump to the next '<++>' and edit it
 noremap <LEADER><LEADER> <Esc>/<++><CR>:nohlsearch<CR>c4l
