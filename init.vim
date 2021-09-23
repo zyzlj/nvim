@@ -130,8 +130,8 @@ source $XDG_CONFIG_HOME/nvim/custom/plugin-install.vim
 " ===
 " === Auto open coc explorer
 " ===
-autocmd VimEnter * CocCommand explorer --no-focus
-autocmd TabNewEntered * CocCommand explorer --no-focus
+" autocmd VimEnter * CocCommand explorer --no-focus
+" autocmd TabNewEntered * CocCommand explorer --no-focus
 " autocmd BufEnter * let d = expand('%') | if isdirectory(d) | silent! bd | exe 'CocCommand explorer ' . d | endif
 
 set re=0

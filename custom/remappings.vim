@@ -57,19 +57,11 @@ noremap <silent> <LEADER>o za
 " === Cursor Movement
 " ===
 " Not for me
-" New cursor movement (the default arrow keys are used for resizing windows)
 "     ^
-"     u
-" < n   i >
-"     e
+"     j
+" < h   l >
+"     k
 "     v
-" noremap <silent> u k
-" noremap <silent> n h
-" noremap <silent> e j
-" noremap <silent> i l
-" noremap <silent> gu gk
-" noremap <silent> ge gj
-" noremap <silent> \v v$h
 
 " U/E keys for 5 times u/e (faster navigation)
 noremap <silent> U 30k
@@ -84,14 +76,9 @@ noremap <silent> I $
 noremap W 5w
 noremap B 5b
 
-" set h (same as n, cursor left) to 'end of word'
-" noremap h e
-
 " Ctrl + U or E will move up/down the view port without moving the cursor
 noremap <C-U> 5<C-y>
 noremap <C-E> 5<C-e>
-
-
 
 source $XDG_CONFIG_HOME/nvim/cursor.vim
 
