@@ -33,7 +33,7 @@ if empty(glob('~/.config/nvim/_machine_specific.vim'))
 	let has_machine_specific_file = 0
 	silent! exec "!cp ~/.config/nvim/default_configs/_machine_specific_default.vim ~/.config/nvim/_machine_specific.vim"
 endif
-source $XDG_CONFIG_HOME/nvim/_machine_specific.vim
+source $HOME/.config/nvim/_machine_specific.vim
 
 
 " ====================
@@ -115,17 +115,17 @@ tnoremap <C-O> <C-\><C-N><C-O>
 " ===
 " === Basic Mappings
 " ===
-source $XDG_CONFIG_HOME/nvim/custom/remappings.vim
+source $HOME/.config/nvim/custom/remappings.vim
 
 " ===
 " === Useful Commands
 " ===
-source $XDG_CONFIG_HOME/nvim/custom/commands.vim
+source $HOME/.config/nvim/custom/commands.vim
 
 " ===
 " === Install Plugins with Vim-Plug
 " ===
-source $XDG_CONFIG_HOME/nvim/custom/plugin-install.vim
+source $HOME/.config/nvim/custom/plugin-install.vim
 
 " ===
 " === Auto open coc explorer
@@ -168,7 +168,7 @@ hi NonText ctermfg=gray guifg=grey10
 " ===
 " === Plugin Settings
 " ===
-source $XDG_CONFIG_HOME/nvim/custom/plugin-settings.vim
+source $HOME/.config/nvim/custom/plugin-settings.vim
 
 
 " ===
