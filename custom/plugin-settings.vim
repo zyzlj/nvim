@@ -47,7 +47,6 @@ let g:coc_global_extensions = [
 	\ 'coc-go',
 	\ 'coc-lists',
 	\ 'coc-prettier',
-	\ 'coc-prisma',
 	\ 'coc-pyright',
 	\ 'coc-python',
 	\ 'coc-snippets',
